@@ -1,0 +1,278 @@
+
+$primary-color:#510B76;
+$alternative-color: #0B760F;
+
+
+
+@font-face {
+    font-family: Cairo_regular;
+    src: url(Cairo-VariableFont_slnt\,wght.ttf);
+    font-weight: 400;
+}
+
+body{
+    background-color: white;
+}
+
+p{
+    font-family: Cairo_regular;
+    font-size: 14px;
+}
+
+.dropdown-toggle::after {
+    display: none;
+    
+}
+
+.dropdown-toggle::before {
+    display: inline-block;
+    margin-right: 0.5em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+  
+}
+
+.first_decorative_div{
+    width: 25px;
+    height:25px;
+    background-color: $primary-color;
+    border-radius: 50%;
+    margin-top: 10px;
+    border:0px;
+}
+
+.second_decorative_div{
+    width: 25px;
+    height:25px;
+    background-color: $alternative-color;
+    border-radius: 50%;
+    margin-top: 10px;
+    border:0;
+}
+
+.special_decorative_div{
+    width: 20px;
+    height:20px;
+    background-color: orange;
+    border-radius: 50%;
+    margin-top: 10px;
+    display: inline;
+    position: absolute;
+    top: 52%;
+    left:34%;
+}
+.navbar-light .navbar-nav .nav-link{
+    color:black;
+}
+.nav-font{
+    font-size: 14px;
+}
+
+.first_button{
+    color: white;
+    background-color: $primary-color;
+    width:fit-content;
+    border-radius:2rem;
+    font-size: 12px;
+    font-weight: 500;
+    animation: glowing 2000ms infinite;
+    
+}
+
+
+
+.second_button{
+    color: $primary-color;
+    background-color: white;
+    width:fit-content;
+    border-radius:2rem;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid gray;
+    
+}
+
+@keyframes glowing {
+    0% { box-shadow: 0 0 -10px orange; }
+    40% { box-shadow: 0 0 20px orange; }
+    60% { box-shadow: 0 0 20px orange; }
+    100% { box-shadow: 0 0 -10px orange; }
+  }
+
+  
+  
+
+
+.first_section{
+    background-color:#510B76;
+    
+   
+
+   
+    svg{
+        margin-top: 3px;
+        margin-left: 5px;
+        color: white;
+    }
+
+    .first_img_wrapper{
+        height: 419px;
+        width:700px;
+        position: relative;  
+    }
+    .title_description{
+        border-right: 1px solid white;
+        padding-right: 5px;
+        margin-right: 5px;
+        color:white;
+        font-size: 14px;
+    }
+    .section_title{
+        font-family: Cairo_regular;
+        font-size: 40px;
+        color: white;
+        width:417px;
+        text-align: end;
+        position: relative;
+       
+    }
+    .section_text{
+        font-family: Cairo_regular;
+        font-size: 14px;
+        color: white;
+        width:415px;
+        text-align:end ;
+    }
+img{
+    object-fit:cover;
+    overflow: hidden;
+    width:700px;
+    height:470px;
+    position: absolute;
+    left: -40%;
+    margin-top: -2px;
+    
+    
+    
+}
+}
+
+.second_section{
+    background-color: none;
+    
+    .second_img_wrapper{
+        width:360px;
+        height:470px;
+        position: relative;
+    }
+    .img_shadow{
+        width:340px;
+        height:250px;
+        background-color:lightgrey;
+        border-radius: 10px;
+        opacity: 0.3;
+        position: absolute;
+        top:55%;
+        right:45%;
+        z-index: -1;
+    }
+
+    .section_title{
+        font-family: Cairo_regular;
+        font-size: 40px;
+        color: black;
+        width:417px;
+        text-align:end;
+        position: relative;
+       
+    }
+    .section_text{
+        font-family: Cairo_regular;
+        font-size: 16px;
+        color: black;
+        width:415px;
+        text-align:end ;
+    }
+   
+}
+
+
+.third_section{
+    background-color: none;
+    position: relative;
+    .card_title{
+        background-color: $primary-color;
+        color: white;
+        font-family: Cairo_regular;
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+    }
+    .card{
+        border-radius: 1rem;
+        height: 300px;
+    }
+
+    .card_text{
+        background-color:   rgb(251, 251, 251);
+        color: black;
+        font-family: Cairo_regular;
+        font-size: 13px;
+        text-align: center;
+        width: 100%;
+        height: 60px;
+        
+    }
+    
+
+    .central_shadow{
+        background-color: lightgrey;
+        opacity: 0.3;
+        border-radius: 10px;
+        width:600px;
+        height:680px;
+        position: absolute;
+        top:110%;
+        
+        
+
+    }
+
+    svg{
+        color: orange;
+     
+        width: 50px;
+        height: 50px;
+        padding:15px;
+        border-radius: 5px;
+        background-color: rgb(253, 253, 237);
+        margin-left: 75%;
+    }
+
+    .logo-img{
+        width: 50px;
+        height: 50px;
+        padding:15px;
+        border-radius: 5px;
+        background-color: rgb(253, 253, 237);
+        margin-left: 75%;
+        
+    }
+}
+
+@media (max-width:768px)
+{
+    .flex-row{
+        flex-direction: row;
+    }
+
+    .first_section{
+        img{
+            left: -35%;
+        }
+    }
+}
